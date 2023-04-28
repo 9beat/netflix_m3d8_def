@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/978b1c49f0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>M3-D8:Netflix Clone</title>
+</head>
+
+<body>
+  <!-- NAVBAR (MOBILE) -->
+  <header class="container-fluid header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#">
+          <img src="./assets/Netflix_Logo_RGB.png" alt="brand_logo" id="brand-logo">
+        </a>
+        <!-- HAMBURGER MENU (MOBILE)-->
+        <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="collapse" data-bs-target="#nav-estesa" aria-controls="nav-estesa" aria-expanded="false" aria-label="toggle navigation">
+            <span class="navbar-toggler-icon nav-icon"></span>
+        </button>
+        <!-- NAV-ESTESA -->
+        <div class="collapse navbar-collapse" id="nav-estesa">
+          <!-- PRIMARY MENU -->
+          <ul class="menu">
+            <li class=""><a class="p-2 text-light" href="#">Home</a></li>
+            <li class=""><a class="p-2 " href="#">TV Shows</a></li>
+            <li class=""><a class="p-2" href="#">Movie</a></li>
+            <li class=""><a class="p-2" href="#">Recently Added</a></li>
+            <li class=""><a class="p-2" href="#">My List</a></li>
+          </ul>
+          <!-- SECONDARY MENU (reverse)-->
+          <ul class="menu-right" id="secondary-menu">
+            <li class="nav-item dropdown">
+              <!-- menu right User account -->
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://i.pravatar.cc/" alt="account image" id="propic">
+              </a>
+              <!--menu right User account DROPDOWN -->
+              <ul class="dropdown-menu" id="account-drop">
+                <li class="dropdown-item" >
+                  <a href="#footer">Account</a>
+                </li>
+                <li class="dropdown-item" >
+                  <a href="#footer">Options</a>
+                </li>
+                <li class="dropdown-divider bg-light"></li>
+                <li class="dropdown-item" >
+                  <a href="#footer">Log-out</a>
+                </li>
+              </ul>
+            </li>
+            <!-- BELL ICON -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-bell"></i>
+              </a>
+            </li>
+            <!-- SECTION KIDS FILTER -->
+            <li class="nav-item" id="kids">
+              <a class="nav-link text-light mt-0" href="#">Kids</a>
+            </li>
+            <!-- SEARCH-ICON -->
+            <li class="nav-item" id="search-item">
+                <!-- SEARCH-BAR -->
+                <div class="search-box"><i class="fa fa-search search-box_icon"></i>
+                  <input class="search-box_input" placeholder="Titolo, persone, generi"/>
+                </div>
+            </li>
+          </ul>
+        </div>
+    
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- SUB-NAV -->
+    <section class="container-fluid animate__animated " id="sub-nav">
+      <div class="row">
+        <div class="d-flex">
+          <h1 class="">TV Shows</h1>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle genres" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="btn-genres">
+              Genres
+            </button>
+            <div class="dropdown-menu" id="menu-genres">
+              <div class="col d-flex">
+                <ul class="">
+                  <li class="dropdown-item"><a>Drama</a></li>
+                  <li class="dropdown-item"><a>Comedy</a></li>
+                  <li class="dropdown-item"><a>Action</a></li>
+                  <li class="dropdown-item"><a>Thriller</a></li>
+                  <li class="dropdown-item"><a>Sci-fi</a></li>
+                  <li class="dropdown-item"><a>Fantasy</a></li>
+                </ul>
+                <ul class="">
+                  <li class="dropdown-item"><a>Crime</a></li>
+                  <li class="dropdown-item"><a>Horror</a></li>
+                  <li class="dropdown-item"><a>Stand-up</a></li>
+                  <li class="dropdown-item"><a>Anime</a></li>
+                  <li class="dropdown-item"><a>Teens</a></li>
+                  <li class="dropdown-item"><a>Docufilm</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- GRID/LIST switch -->
+        <aside class="col" id="iconedestra">
+            <img src="./assets/icons/menus.png" class="link-opacity-50-hover" id="bars-icon"/>
+            <img src="./assets/icons/grid.png" class="link-opacity-50-hover" id="grid-icon"/>
+        </aside>
+          
+        
+    </section>
+
+    <!-- TRENDING NOW SECTION -->
+    <section class="container-fluid" id="trending-now">
+      <div class="row ">
+        <h3 class="pb-0 mt-5 mb-0 text-light">Trending Now</h3>
+        <section class="slider animate__animated animate__fadeInRight animate__delay-1s">
+          <a class="slides">
+            <img src="./assets/1.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/2.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/3.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/4.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/5.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/6.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/7.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/8.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/9.png" />
+          </a>
+          <!-- <a class="slides">
+            <img src="./assets/10.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/11.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/12.png" />
+          </a> -->
+        </section>
+      </div>
+    </section>
+
+    <!-- WATCH AGAIN SECTION -->
+    <section class="container-fluid" id="watch-again">
+      <div class="row ">
+        <h3 class="pb-0 mt-5 mb-0 text-light">Whatch Again</h3>
+        <section class="slider animate__animated animate__fadeInRight animate__delay-2s">
+          <a class="slides">
+            <img src="./assets/8.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/9.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/10.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/11.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/12.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/13.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/14.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/15.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/16.png" />
+          </a>
+          <!-- <a class="slides">
+            <img src="./assets/17.png" />
+          </a> -->
+        </section>
+      </div>
+    </section>
+
+    <!-- NEW RELEASE SECTION -->
+    <section class="container-fluid" id="new-release">
+      <div class="row">
+        <h3 class="pb-0 mt-5 mb-0 text-light">New release</h3>
+        <section class="slider animate__animated animate__fadeInRight animate__delay-3s">
+          <a class="slides">
+            <img src="./assets/15.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/16.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/17.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/18.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/7.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/14.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/17.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/18.png" />
+          </a>
+          <a class="slides">
+            <img src="./assets/2.png" />
+          </a>
+          <!-- <a class="slides">
+            <img src="./assets/1.png" />
+          </a> -->
+        </section>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+        </div>
+        <div class="col py-1 px-3">
+          <i class="fa-brands fa-square-facebook"><a href="www.facebook.com"></a></i>
+          <i class="fa-brands fa-instagram"><a href="www.instagram.com"></a></i>
+          <i class="fa-brands fa-twitter"><a href="www.twitter.com"></a></i>
+          <i class="fa-brands fa-youtube""><a href="www.youtube.com"></a></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+        </div>
+        <div class="col-2 d-flex flex-column">
+          <a href="#">Audio and subtitles</a>
+          <a href="#">Media center</a>
+          <a href="#">Privacy</a>
+          <a href="#">Contact us</a>
+        </div>
+        <div class="col-2 d-flex flex-column">
+          <a href="#">Audio Description</a>
+          <a href="#">Investor Relations</a>
+          <a href="#">Legal Notices</a>
+        </div>
+        <div class="col-2 d-flex flex-column">
+          <a href="#">Help center</a>
+          <a href="#">Work with us</a>
+          <a href="#">Cookies reference</a>
+        </div>
+        <div class="col-2 d-flex flex-column">
+          <a href="#">Gift cards</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Corporate information</a>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-2"></div>
+        <div class="col-3">
+          <button class="btn btn-secondary" id="services-code" type="button">
+            Service code
+          </button>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-2"></div>
+        <div class="col">
+          <p>© 1997-2023 Netflix, Inc.</p>
+          <h6 class="w-50 m-auto text-danger opacity-50">[ ©loned by Matteo Forni - Epicode 2023 ]</h6>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

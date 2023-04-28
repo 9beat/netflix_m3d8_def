@@ -1,0 +1,11 @@
+Mi sono riferito più al sito di Netflix che al file dell'esercizio, 
+ma dovrei aver completato tutte le richieste e credo qualcosa in 
+più, nonostante l'incidente di percorso, tranne le slide funzionanti che avevo fatto con jquery ma non ho avuto tempo di replicarle.
+
+
+Se le animazioni non funzionano installare le dipendenze npm
+https://animate.style/
+
+P.S. Aspettandevo il tempo necessario per ripulire un po' il codice, soprattutto il css perchè avendolo scritto a più riprese immagino sia un po' ridondante, ma ho preferito concentrarmi sul modulo attuale.
+
+Matteo
