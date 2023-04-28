@@ -1,0 +1,27 @@
+N.B. 
+Mi sono riferito al sito di Netflix piuttosto che all'immagine 
+fornita, ma dovrei aver completato tutte le richieste (e credo qualcosa in 
+più nonostante gli incidenti di percorso) tranne le slide funzionanti 
+che avevo fatto con jquery nel progetto perso e qui non ho avuto tempo 
+di replicare.
+
+Dovrebbe bastare la CDN ma nel caso le animazioni di apertura non 
+funzionassero vuol dire che bisogna installare le dipendenze npm 
+
+--> https://animate.style/ 
+
+P.S. 
+Stavo cercando di ricavare anche il tempo necessario per ripulire 
+un po' il codice, soprattutto il css, perchè avendolo scritto a più riprese
+sarà probabilment un po' ridondante. Ho preferito infine concentrarmi di più
+sul modulo attuale e per lo stesso motivo ho utilizzato una libreria per le 
+animazioni al caricamento, perchè nonostante il delay, le slide, venivano 
+prima mostrate nello stato iniziale e successivamente partiva l'animazione.
+Sarebbe probabilmente bastato gestirla con javascript, ma volevo consegnare
+per dedicarmi al resto.
+
+Nel complesso credo di aver lavorato bene, certo non sono soddisfatto quanto
+lo ero del progetto andato perduto.
+
+
+Matteo
